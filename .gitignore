@@ -1,0 +1,30 @@
+﻿# Flutter & Dart
+**/flutter_app/.dart_tool/
+**/flutter_app/build/
+**/flutter_app/.pub-cache/
+**/flutter_app/.pub/
+**/flutter_app/.flutter-plugins
+**/flutter_app/.flutter-plugins-dependencies
+
+# Android local & build files
+**/android/local.properties
+**/android/.gradle/
+**/.gradle/
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+# IDEs & Editors
+**/.idea/
+**/*.iml
+**/*.ipr
+**/*.iws
+**/.vscode/
+
+# OS generated
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
