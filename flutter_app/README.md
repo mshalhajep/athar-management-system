@@ -4,24 +4,28 @@
 
 ---
 
-## 👥 جدول توزيع المهام الهندسية ومناقشة المشروع (فريق من 5 طلاب)
+## 👥 جدول توزيع المهام الهندسية وأعضاء الفريق (5 طلاب)
 
-تم توزيع المشروع هندسياً ومعمارياً على **5 طلاب**، بحيث يتولى كل طالب **طبقة مستقلة (Layer)** وملفات واضحة في الكود، مع جاهزية كاملة لأسئلة المناقشة أمام الدكتور:
+تم توزيع المشروع هندسياً ومعمارياً على أعضاء الفريق الخمسة، بحيث يتولى كل طالب **طبقة مستقلة (Layer)** وملفات واضحة في الكود ومسؤوليات محددة في المناقشة:
 
-| # | اسم الطالب / التخصص الهندسي | النطاق الفني (Technical Scope) | المجلدات والملفات المسندة |
-|---|---|---|---|
-| **1** | **مهندس الواجهات وتجربة المستخدم (UI/UX Lead)**اواب النزيلي| تصميم لوحة التحكم، الجداول الإحصائية، الفلاتر والوضع المظلم | `lib/screens/home_screen.dart`<br>`lib/screens/inventory_table_screen.dart`<br>`lib/widgets/stat_card.dart`<br>`lib/widgets/purchase_card.dart`<br>`lib/theme/app_theme.dart` |
-| **2** | **مهندس قواعد البيانات المحلية والعمليات الحسابية (Database & CRUD Architect)** مشعل حاجب| قاعدة بيانات SQLite المحلية، نمط الـ Singleton، العمليات الحسابية والتحقق | `lib/services/database_helper.dart`<br>`lib/services/purchases_service.dart`<br>`lib/models/purchase.dart`<br>`lib/utils/validators.dart`<br>`lib/widgets/purchase_form_dialog.dart` |
-
-| **3** | **مهندس الذكاء الاصطناعي ومعالجة الفواتير (محمد العيدروس er)**محمد العيدروس | استخراج نصوص الفواتير عبر Google Gemini Vision، التعبئة الآلية | `lib/services/invoice_scanner_service.dart`<br>`lib/models/invoice_scan_result.dart`<br>`lib/widgets/autofill_invoice_dialog.dart`<br>`lib/widgets/invoice_viewer_dialog.dart`<br>`lib/widgets/invoice_details_dialog.dart` |
-| **4** | * قحطان الشاجع*مهندس السحابة والمزامنة والنسخ الاحتياطي (Cloud Sync & Backup Engineer)** | الربط مع Google Firebase Firestore، المزامنة الفورية Offline-First | `lib/services/firestore_sync_service.dart`<br>`lib/services/backup_sync_service.dart`<br>`lib/widgets/app_image_view.dart` |
-| **5**محمد العواضي | **مهندس الأمان وضمان الجودة واختبارات الوحدة (Auth, Security & QA Engineer)** | تسجيل الدخول، إدارة الجلسات، التحديثات، واختبارات الوحدة (Unit Tests) | `lib/services/auth_service.dart`<br>`lib/screens/login_screen.dart`<br>`lib/screens/splash_screen.dart`<br>`lib/services/app_update_service.dart`<br>`test/multi_item_purchase_test.dart` |
+| # | اسم الطالب | التخصص الهندسي والدور | النطاق الفني (Technical Scope) | المجلدات والملفات المسندة |
+|---|---|---|---|---|
+| **1** | **أواب النزيلي** | **مهندس الواجهات وتجربة المستخدم (UI/UX Lead)** | تصميم لوحة التحكم، الجداول الإحصائية، الفلاتر والوضع المظلم | `lib/screens/home_screen.dart`<br>`lib/screens/inventory_table_screen.dart`<br>`lib/widgets/stat_card.dart`<br>`lib/widgets/purchase_card.dart`<br>`lib/theme/app_theme.dart` |
+| **2** | **مشعل حاجب** | **مهندس قواعد البيانات المحلية والعمليات الحسابية (Database & CRUD Architect)** | قاعدة بيانات SQLite المحلية، نمط Singleton، العمليات الحسابية والتحقق | `lib/services/database_helper.dart`<br>`lib/services/purchases_service.dart`<br>`lib/models/purchase.dart`<br>`lib/utils/validators.dart`<br>`lib/widgets/purchase_form_dialog.dart` |
+| **3** | **محمد العيدروس** | **مهندس الذكاء الاصطناعي ومعالجة الفواتير (AI & Smart OCR Engineer)** | استخراج نصوص الفواتير عبر Google Gemini Vision، التعبئة الآلية | `lib/services/invoice_scanner_service.dart`<br>`lib/models/invoice_scan_result.dart`<br>`lib/widgets/autofill_invoice_dialog.dart`<br>`lib/widgets/invoice_viewer_dialog.dart`<br>`lib/widgets/invoice_details_dialog.dart` |
+| **4** | **قحطان الشاجع** | **مهندس السحابة والمزامنة والنسخ الاحتياطي (Cloud Sync & Backup Engineer)** | الربط مع Google Firebase Firestore، المزامنة الفورية Offline-First | `lib/services/firestore_sync_service.dart`<br>`lib/services/backup_sync_service.dart`<br>`lib/widgets/app_image_view.dart` |
+| **5** | **محمد العواضي** | **مهندس تسجيل الدخول، الأمان وضمان الجودة (Auth, Security & QA Engineer)** | تسجيل الدخول، إدارة الجلسات، التحديثات، واختبارات الوحدة (Unit Tests) | `lib/services/auth_service.dart`<br>`lib/screens/login_screen.dart`<br>`lib/screens/splash_screen.dart`<br>`lib/services/app_update_service.dart`<br>`test/multi_item_purchase_test.dart` |
 
 ---
 
 ## 🔍 التفصيل الهندسي لمهام كل طالب وأسئلة المناقشة
 
-### 👤 الطالب الأول: مهندس الواجهات وتجربة المستخدم (UI/UX & Frontend Lead)
+### 👤 الطالب الأول: أواب النزيلي — مهندس الواجهات وتجربة المستخدم (UI/UX Lead)
+* **الملفات:**
+  * `lib/screens/home_screen.dart` (الشاشة الرئيسية ولوحة التحكم)
+  * `lib/screens/inventory_table_screen.dart` (جدول المخزون الكامل والفلاتر والفرز)
+  * `lib/widgets/stat_card.dart` و `lib/widgets/purchase_card.dart` (بطاقات العرض التفاعلية)
+  * `lib/theme/app_theme.dart` (هوية التطبيق البصرية والوضع المظلم/الفاتح)
 * **المسؤولية:**
   * بناء واجهات عصرية متجاوبة تدعم مختلف مقاسات الشاشات (الهواتف، الأجهزة اللوحية، والشاشات العريضة).
   * تصميم وبرمجة **لوحة التحكم الرئيسية (Dashboard)** وبطاقات الإحصائيات الفورية (`StatCard`) لإجمالي المشتريات ومجموع الفواتير.
@@ -33,7 +37,12 @@
 
 ---
 
-### 👤 الطالب الثاني: مهندس قواعد البيانات المحلية والعمليات الحسابية (Database & CRUD Architect)
+### 👤 الطالب الثاني: مشعل حاجب — مهندس قواعد البيانات المحلية والعمليات الحسابية (Database & CRUD Architect)
+* **الملفات:**
+  * `lib/services/database_helper.dart` (إنشاء جداول SQLite، الربط مع sqflite، وترقيات قاعدة البيانات)
+  * `lib/services/purchases_service.dart` (عمليات الإضافة، التعديل، الحذف، وحساب المجاميع)
+  * `lib/models/purchase.dart` (نموذج المشتريات وتخزين الأصناف بصيغة `items_json`)
+  * `lib/utils/validators.dart` و `lib/widgets/purchase_form_dialog.dart` (التحقق ونموذج الإدخال)
 * **المسؤولية:**
   * إنشاء وإدارة قاعدة البيانات المحلية **SQLite** عبر حزمة `sqflite`.
   * تطبيق نمط التصميم الشهير **Singleton Pattern** على كلاس `DatabaseHelper` لضمان وجود قناة اتصال واحدة آمنة ومنع الـ Database Locks.
@@ -45,7 +54,12 @@
 
 ---
 
-### 👤 الطالب الثالث: مهندس الذكاء الاصطناعي ومعالجة الفواتير الذكية (AI & OCR Integration Engineer)
+### 👤 الطالب الثالث: محمد العيدروس — مهندس الذكاء الاصطناعي ومعالجة الفواتير (AI & Smart OCR Engineer)
+* **الملفات:**
+  * `lib/services/invoice_scanner_service.dart` (الاتصال بنماذج Google Gemini Vision Flash واستخراج البيانات)
+  * `lib/models/invoice_scan_result.dart` (كائن الفاتورة المستخرجة وحفظ الثقة والبيانات المقروءة)
+  * `lib/widgets/autofill_invoice_dialog.dart` (نافذة مراجعة وتعديل بيانات الذكاء الاصطناعي قبل الحفظ)
+  * `lib/widgets/invoice_viewer_dialog.dart` و `lib/widgets/invoice_details_dialog.dart`
 * **المسؤولية:**
   * دمج خدمات الذكاء الاصطناعي التوليدي عبر واجهة برمجة تطبيقات **Google Gemini 1.5/3.x Flash Vision**.
   * استخراج بيانات الفاتورة المصورة آلياً بدقة (اسم المورد، رقم الفاتورة، الأصناف، الكميات، الأسعار الإفرادية، والتاريخ).
@@ -57,7 +71,11 @@
 
 ---
 
-### 👤 الطالب الرابع: مهندس السحابة والمزامنة والنسخ الاحتياطي (Cloud Sync & Backup Engineer)
+### 👤 الطالب الرابع: قحطان الشاجع — مهندس السحابة والمزامنة والنسخ الاحتياطي (Cloud Sync & Backup Engineer)
+* **الملفات:**
+  * `lib/services/firestore_sync_service.dart` (الربط المباشر مع Google Cloud Firestore والمزامنة الآنية)
+  * `lib/services/backup_sync_service.dart` (توليد واستعادة النسخ الاحتياطية وتصدير البيانات)
+  * `lib/widgets/app_image_view.dart` (معالجة عرض صور الفواتير السحابية والمحلية)
 * **المسؤولية:**
   * ربط التطبيق بسحابة **Google Firebase Firestore** لمزامنة الفواتير والمخزون في الوقت الحقيقي (Real-Time Cloud Sync).
   * تطبيق نمط **Offline-First**؛ حيث يعمل التطبيق بكفاءة 100% بدون إنترنت على SQLite المحلية، وتتم المزامنة التلقائية فور توفر الشبكة.
@@ -69,7 +87,13 @@
 
 ---
 
-### 👤 الطالب الخامس: مهندس الأمان والتحقق وضمان الجودة (Auth, Security & QA Engineer)
+### 👤 الطالب الخامس: محمد العواضي — مهندس تسجيل الدخول، الأمان وضمان الجودة (Auth, Security & QA Engineer)
+* **الملفات:**
+  * `lib/services/auth_service.dart` (إدارة المستخدمين وجلسات الدخول `UserModel`)
+  * `lib/screens/login_screen.dart` (واجهة الدخول والتحقق من صحة البريد وكلمة المرور)
+  * `lib/screens/splash_screen.dart` (شاشة البداية، فحص الجلسة، والتحقق التلقائي)
+  * `lib/services/app_update_service.dart` (فحص التحديثات البرمجية)
+  * `test/multi_item_purchase_test.dart` (اختبارات الوحدة لضمان دقة العمليات الحسابية)
 * **المسؤولية:**
   * بناء نظام المصادقة وإدارة المستخدمين وجلسات الدخول عبر كلاس `AuthService`.
   * حفظ جلسة الدخول وتشفيرها محلياً باستخدام `SharedPreferences` لمنع تكرار تسجيل الدخول.
@@ -84,11 +108,11 @@
 ## 🎬 سيناريو تقديم المشروع أمام الدكتور (Presentation Flow)
 
 لإعطاء انطباع ممتاز عن الانسجام كفريق مهني محترف، يتم العرض بهذا الترتيب المتسلسل:
-1. **الطالب الخامس (الأمان والجودة):** يبدأ بتشغيل التطبيق، ويستعرض شاشة البداية `SplashScreen` وفحص الجلسة وتسجيل الدخول، ويشير إلى اختبارات الجودة المكتوبة.
-2. **الطالب الأول (الواجهات):** يستلم التطبيق ويستعرض الشاشة الرئيسية ولوحة الإحصائيات وجدول الجرد المتكامل وتجربة المستخدم السلسة.
-3. **الطالب الثاني (قاعدة البيانات):** يضغط على إضافة فاتورة جديدة، ويشرح كيف تعمل قاعدة بيانات SQLite المحلية والتحقق من صحة المدخلات.
-4. **الطالب الثالث (الذكاء الاصطناعي - لحظة الإبهار):** يقوم بفتح الكاميرا ومسح فاتورة ورقية حقيقية، ويوضح كيف يقوم Gemini AI باستخراج الأصناف وتعبئة البيانات آلياً.
-5. **الطالب الرابع (السحابة والمزامنة):** يوضح كيف تم حفظ هذه الفاتورة فورياً في سحابة Firestore وظهرت على جهاز آخر متصل بنفس الحساب مع استعراض خيار النسخ الاحتياطي.
+1. **محمد العواضي يبدأ (دقيقة 1):** يفتح التطبيق، يستعرض شاشة البداية `SplashScreen`، فحص الجلسة، تسجيل الدخول والأمان، مع الإشارة لاختبارات الجودة.
+2. **أواب النزيلي يستلم (دقيقة 2):** يستعرض لوحة التحكم الرئيسية (Dashboard)، كروت الإحصائيات، وجدول الجرد المتجاوب مع ميزات الفرز والبحث الحي.
+3. **مشعل حاجب يتدخل (دقيقة 3):** يضغط على زر "إضافة فاتورة يدوياً"، ويشرح بنية قاعدة البيانات SQLite المحلية، ونمط Singleton، والتحقق الحسابي.
+4. **محمد العيدروس يقدم الميزة الأقوى (دقيقة 4):** يلتقط صورة لفاتورة ورقية حقيقية، ويوضح بالبث الحي استخراج Gemini Vision للأصناف وتعبئتها آلياً.
+5. **قحطان الشاجع يختم (دقيقة 5):** يوضح مزامنة هذه الفاتورة سحابياً مع Firebase وظهورها فوراً على هاتف آخر، ويستعرض نظام النسخ الاحتياطي.
 
 ---
 
@@ -101,9 +125,6 @@ flutter pub get
 # تشغيل الاختبارات الآلية
 flutter test
 
-# تشغيل التطبيق (أندرويد / ويندوز / ويب)
+# تشغيل التطبيق
 flutter run
 ```
-
----
-*تم إعداد هذا التوثيق لتوحيد جهود الفريق وضمان أعلى درجات التميز في المناقشة الأكاديمية.*
