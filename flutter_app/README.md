@@ -10,11 +10,12 @@
 
 | # | اسم الطالب / التخصص الهندسي | النطاق الفني (Technical Scope) | المجلدات والملفات المسندة |
 |---|---|---|---|
-| **1** | **مهندس الواجهات وتجربة المستخدم (UI/UX Lead)** | تصميم لوحة التحكم، الجداول الإحصائية، الفلاتر والوضع المظلم | `lib/screens/home_screen.dart`<br>`lib/screens/inventory_table_screen.dart`<br>`lib/widgets/stat_card.dart`<br>`lib/widgets/purchase_card.dart`<br>`lib/theme/app_theme.dart` |
-| **2** | **مهندس قواعد البيانات المحلية والعمليات الحسابية (Database & CRUD Architect)** | قاعدة بيانات SQLite المحلية، نمط الـ Singleton، العمليات الحسابية والتحقق | `lib/services/database_helper.dart`<br>`lib/services/purchases_service.dart`<br>`lib/models/purchase.dart`<br>`lib/utils/validators.dart`<br>`lib/widgets/purchase_form_dialog.dart` |
-| **3** | **مهندس الذكاء الاصطناعي ومعالجة الفواتير (AI & Smart OCR Engineer)** | استخراج نصوص الفواتير عبر Google Gemini Vision، التعبئة الآلية | `lib/services/invoice_scanner_service.dart`<br>`lib/models/invoice_scan_result.dart`<br>`lib/widgets/autofill_invoice_dialog.dart`<br>`lib/widgets/invoice_viewer_dialog.dart`<br>`lib/widgets/invoice_details_dialog.dart` |
-| **4** | **مهندس السحابة والمزامنة والنسخ الاحتياطي (Cloud Sync & Backup Engineer)** | الربط مع Google Firebase Firestore، المزامنة الفورية Offline-First | `lib/services/firestore_sync_service.dart`<br>`lib/services/backup_sync_service.dart`<br>`lib/widgets/app_image_view.dart` |
-| **5** | **مهندس الأمان وضمان الجودة واختبارات الوحدة (Auth, Security & QA Engineer)** | تسجيل الدخول، إدارة الجلسات، التحديثات، واختبارات الوحدة (Unit Tests) | `lib/services/auth_service.dart`<br>`lib/screens/login_screen.dart`<br>`lib/screens/splash_screen.dart`<br>`lib/services/app_update_service.dart`<br>`test/multi_item_purchase_test.dart` |
+| **1** | **مهندس الواجهات وتجربة المستخدم (UI/UX Lead)**اواب النزيلي| تصميم لوحة التحكم، الجداول الإحصائية، الفلاتر والوضع المظلم | `lib/screens/home_screen.dart`<br>`lib/screens/inventory_table_screen.dart`<br>`lib/widgets/stat_card.dart`<br>`lib/widgets/purchase_card.dart`<br>`lib/theme/app_theme.dart` |
+| **2** | **مهندس قواعد البيانات المحلية والعمليات الحسابية (Database & CRUD Architect)** مشعل حاجب| قاعدة بيانات SQLite المحلية، نمط الـ Singleton، العمليات الحسابية والتحقق | `lib/services/database_helper.dart`<br>`lib/services/purchases_service.dart`<br>`lib/models/purchase.dart`<br>`lib/utils/validators.dart`<br>`lib/widgets/purchase_form_dialog.dart` |
+
+| **3** | **مهندس الذكاء الاصطناعي ومعالجة الفواتير (محمد العيدروس er)**محمد العيدروس | استخراج نصوص الفواتير عبر Google Gemini Vision، التعبئة الآلية | `lib/services/invoice_scanner_service.dart`<br>`lib/models/invoice_scan_result.dart`<br>`lib/widgets/autofill_invoice_dialog.dart`<br>`lib/widgets/invoice_viewer_dialog.dart`<br>`lib/widgets/invoice_details_dialog.dart` |
+| **4** | * قحطان الشاجع*مهندس السحابة والمزامنة والنسخ الاحتياطي (Cloud Sync & Backup Engineer)** | الربط مع Google Firebase Firestore، المزامنة الفورية Offline-First | `lib/services/firestore_sync_service.dart`<br>`lib/services/backup_sync_service.dart`<br>`lib/widgets/app_image_view.dart` |
+| **5**محمد العواضي | **مهندس الأمان وضمان الجودة واختبارات الوحدة (Auth, Security & QA Engineer)** | تسجيل الدخول، إدارة الجلسات، التحديثات، واختبارات الوحدة (Unit Tests) | `lib/services/auth_service.dart`<br>`lib/screens/login_screen.dart`<br>`lib/screens/splash_screen.dart`<br>`lib/services/app_update_service.dart`<br>`test/multi_item_purchase_test.dart` |
 
 ---
 
